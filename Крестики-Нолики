@@ -1,0 +1,138 @@
+import sys
+h_line0 = ['-', '-', '-']
+h_line1 = ['-', '-', '-']
+h_line2 = ['-', '-', '-']
+h = ''
+v = ''
+def board(z):
+    print('  0 1 2')
+    print('0 ',end='')
+    for elem in h_line0:
+        print(elem, end=" ")
+    print('')
+    print('1 ', end='')
+    for elem in h_line1:
+        print(elem, end=" ")
+    print('')
+    print('2 ', end='')
+    for elem in h_line2:
+        print(elem, end=" ")
+    print('')
+    print('Ход', z)
+print('Игрок X, введите строку хода:')
+h = int(input())
+print('Игрок X, введите cтолец хода:')
+v = int(input())
+if h==0:
+    h_line0[v] = 'x'
+elif h==1:
+    h_line1[v] = 'x'
+elif h==2:
+    h_line2[v] = 'x'
+board(1)
+print('Игрок 0, введите строку хода:')
+h = int(input())
+print('Игрок 0, введите cтолец хода:')
+v = int(input())
+if h==0:
+    h_line0[v] = 'o'
+elif h==1:
+    h_line1[v] = 'o'
+elif h==2:
+    h_line2[v] = 'o'
+board(2)
+print('Игрок X, введите строку хода:')
+h = int(input())
+print('Игрок X, введите cтолец хода:')
+v = int(input())
+if h==0:
+    h_line0[v] = 'x'
+elif h==1:
+    h_line1[v] = 'x'
+elif h==2:
+    h_line2[v] = 'x'
+board(3)
+print('Игрок 0, введите строку хода:')
+h = int(input())
+print('Игрок 0, введите cтолец хода:')
+v = int(input())
+if h==0:
+    h_line0[v] = 'o'
+elif h==1:
+    h_line1[v] = 'o'
+elif h==2:
+    h_line2[v] = 'o'
+board(4)
+print('Игрок X, введите строку хода:')
+h = int(input())
+print('Игрок X, введите cтолец хода:')
+v = int(input())
+if h==0:
+    h_line0[v] = 'x'
+elif h==1:
+    h_line1[v] = 'x'
+elif h==2:
+    h_line2[v] = 'x'
+board(5)
+if h_line0[0]==h_line0[1]==h_line0[2] =='x' or h_line1[0]==h_line1[1]==h_line1[2] =='x' or h_line2[0]==h_line2[1]==h_line2[2] =='x' or h_line0[0]==h_line1[0]==h_line2[0] =='x' or h_line0[1]==h_line1[1]==h_line2[1] =='x' or h_line0[2]==h_line1[2]==h_line2[2] =='x' or h_line0[0]==h_line1[1]==h_line2[2] =='x' or h_line0[2]==h_line1[1]==h_line2[0] =='x':
+    print('Игрок X выиграл')
+    sys.exit()
+
+print('Игрок 0, введите строку хода:')
+h = int(input())
+print('Игрок 0, введите cтолец хода:')
+v = int(input())
+if h==0:
+    h_line0[v] = 'o'
+elif h==1:
+    h_line1[v] = 'o'
+elif h==2:
+    h_line2[v] = 'o'
+board(6)
+if h_line0[0]==h_line0[1]==h_line0[2] =='o' or h_line1[0]==h_line1[1]==h_line1[2] =='o' or h_line2[0]==h_line2[1]==h_line2[2] =='o' or h_line0[0]==h_line1[0]==h_line2[0] =='o' or h_line0[1]==h_line1[1]==h_line2[1] =='o' or h_line0[2]==h_line1[2]==h_line2[2] =='o' or h_line0[0]==h_line1[1]==h_line2[2] =='o' or h_line0[2]==h_line1[1]==h_line2[0] =='o':
+    print('Игрок 0 выиграл')
+    sys.exit()
+print('Игрок X, введите строку хода:')
+h = int(input())
+print('Игрок X, введите cтолец хода:')
+v = int(input())
+if h==0:
+    h_line0[v] = 'x'
+elif h==1:
+    h_line1[v] = 'x'
+elif h==2:
+    h_line2[v] = 'x'
+board(7)
+if h_line0[0]==h_line0[1]==h_line0[2] =='x' or h_line1[0]==h_line1[1]==h_line1[2] =='x' or h_line2[0]==h_line2[1]==h_line2[2] =='x' or h_line0[0]==h_line1[0]==h_line2[0] =='x' or h_line0[1]==h_line1[1]==h_line2[1] =='x' or h_line0[2]==h_line1[2]==h_line2[2] =='x' or h_line0[0]==h_line1[1]==h_line2[2] =='x' or h_line0[2]==h_line1[1]==h_line2[0] =='x':
+    print('Игрок X выиграл')
+    sys.exit()
+print('Игрок 0, введите строку хода:')
+h = int(input())
+print('Игрок 0, введите cтолец хода:')
+v = int(input())
+if h==0:
+    h_line0[v] = 'o'
+elif h==1:
+    h_line1[v] = 'o'
+elif h==2:
+    h_line2[v] = 'o'
+board(8)
+if h_line0[0]==h_line0[1]==h_line0[2] =='o' or h_line1[0]==h_line1[1]==h_line1[2] =='o' or h_line2[0]==h_line2[1]==h_line2[2] =='o' or h_line0[0]==h_line1[0]==h_line2[0] =='o' or h_line0[1]==h_line1[1]==h_line2[1] =='o' or h_line0[2]==h_line1[2]==h_line2[2] =='o' or h_line0[0]==h_line1[1]==h_line2[2] =='o' or h_line0[2]==h_line1[1]==h_line2[0] =='o':
+    print('Игрок 0 выиграл')
+    sys.exit()
+print('Игрок X, введите строку хода:')
+h = int(input())
+print('Игрок X, введите cтолец хода:')
+v = int(input())
+if h==0:
+    h_line0[v] = 'x'
+elif h==1:
+    h_line1[v] = 'x'
+elif h==2:
+    h_line2[v] = 'x'
+board(9)
+if h_line0[0]==h_line0[1]==h_line0[2] =='x' or h_line1[0]==h_line1[1]==h_line1[2] =='x' or h_line2[0]==h_line2[1]==h_line2[2] =='x' or h_line0[0]==h_line1[0]==h_line2[0] =='x' or h_line0[1]==h_line1[1]==h_line2[1] =='x' or h_line0[2]==h_line1[2]==h_line2[2] =='x' or h_line0[0]==h_line1[1]==h_line2[2] =='x' or h_line0[2]==h_line1[1]==h_line2[0] =='x':
+    print('Игрок X выиграл')
+    sys.exit()
+else:
+    print('Ничья')
